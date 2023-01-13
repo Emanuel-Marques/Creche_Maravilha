@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{058A8EB0-0A47-4B27-BCB7-81E03435C6AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Creche_Maravilha</RootNamespace>
+    <AssemblyName>Creche_Maravilha</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.0.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.commons, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.commons.7.2.4\lib\net461\itext.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itextsharp.pdfa.5.5.13.3\lib\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.7.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.7.0.0\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.7.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.7.0.0\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.7.0.0\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.7.0.0\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banco.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadEncarregados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadEncarregados.Designer.cs">
+      <DependentUpon>Frm_CadEncarregados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CadProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CadProfessor.Designer.cs">
+      <DependentUpon>Frm_CadProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GerirEncarregados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GerirEncarregados.Designer.cs">
+      <DependentUpon>Frm_GerirEncarregados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_gestaoUtilizadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_gestaoUtilizadores.Designer.cs">
+      <DependentUpon>Frm_gestaoUtilizadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Gestao_Professores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Gestao_Professores.Designer.cs">
+      <DependentUpon>Frm_Gestao_Professores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_matricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_matricula.Designer.cs">
+      <DependentUpon>Frm_matricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Menu.Designer.cs">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Pre_Inscricoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Pre_Inscricoes.Designer.cs">
+      <DependentUpon>Frm_Pre_Inscricoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Turmas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Turmas.Designer.cs">
+      <DependentUpon>Frm_Turmas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globais.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadEncarregados.resx">
+      <DependentUpon>Frm_CadEncarregados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CadProfessor.resx">
+      <DependentUpon>Frm_CadProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GerirEncarregados.resx">
+      <DependentUpon>Frm_GerirEncarregados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_gestaoUtilizadores.resx">
+      <DependentUpon>Frm_gestaoUtilizadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Gestao_Professores.resx">
+      <DependentUpon>Frm_Gestao_Professores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_matricula.resx">
+      <DependentUpon>Frm_matricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Pre_Inscricoes.resx">
+      <DependentUpon>Frm_Pre_Inscricoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Turmas.resx">
+      <DependentUpon>Frm_Turmas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair-da-tela-cheia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\do-utilizador %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_encarregados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_matricula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_pagamentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_pre_incricoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_professores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_turmas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_carregar_foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_gerir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_novo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_salvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Cadastro_de_Professores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\do-utilizador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Gestão_de_Professores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Gestão_de_Professores1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Cadastro_de_Encarregados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Gestão_de_Encarregados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Pre_inscricao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tela_Matricula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consumidor.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.117.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>
