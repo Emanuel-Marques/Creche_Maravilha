@@ -7,7 +7,7 @@ O Sistema de Gestão de Creche foi concebido com o objetivo de otimizar a admini
 Durante sua fase de desenvolvimento, implementamos as funcionalidades de cadastro de alunos e responsáveis, registo de informações básicas de saúde e uma interface inicial para controlo de presenças diárias.
 
 ### Status Atual
-O projeto está parado desde meados de 2024. Não há desenvolvimento ativo no momento, e o código pode conter:
+O projeto está parado desde meados de 2022. Não há desenvolvimento ativo no momento, e o código pode conter:
 
 - Funcionalidades incompletas.
 - Bugs conhecidos ou desconhecidos.
